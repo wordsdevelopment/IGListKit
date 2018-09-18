@@ -22,7 +22,7 @@ IGLK_SUBCLASSING_RESTRICTED
 /**
  :nodoc:
  */
-- (void)performBatchUpdates:(void (^)(void))updates
+- (void)performBatchUpdates:(__attribute__((noescape)) void (^)(void))updates
                  completion:(void (^)(BOOL))completion IGLK_UNAVAILABLE("Call -[IGListAdapter performUpdatesWithCompletion:] instead");
 
 /**
